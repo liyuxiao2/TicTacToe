@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Game title */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Grid styles */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+/* Cell styles */
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    font-size: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+/* Reset button */
+#reset {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+    background-color: #0056b3;
+}
+
+/* Message area */
+#message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
